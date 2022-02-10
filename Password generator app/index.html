@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Password generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="generator-container">
+            <h2>Password generator</h2>
+            <div class="input-container">
+                <input type="text" title='password input' id="inputum">
+                <i id="copyy" class="fas fa-copy"></i>
+            </div>
+
+            <p id="slider-length">length: 16</p>
+            <div class="range-section"> <b>8</b>
+                <input id="slider" type="range" min="8" max="160" value="24" title="range" /> <b>160</b>
+            </div>
+            <div class="settings-container">
+                <span>Settings</span>
+                <div class="chn">
+                    <p>Include Uppercase</p>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="uppercase" title="Uppercase" class="toggle">
+                        <label for="uppercase" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="chn">
+                    <p>Include Lowercase</p>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="lowercase" title="lowercase" class="toggle">
+                        <label for="lowercase" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="chn">
+                    <p>Include Numbers</p>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="numbers" title="numbers" class="toggle">
+                        <label for="numbers" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="chn">
+                    <p>Include Symbols</p>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="symbols" title="symbols" class="toggle">
+                        <label for="symbols" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <button id="generateBtn">GENERATE PASSWORD</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
