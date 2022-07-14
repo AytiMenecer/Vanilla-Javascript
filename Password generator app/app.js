@@ -12,7 +12,7 @@ const copyGen = document.getElementById('copyy')
 copyGen.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
     const password = resultInput.value
-
+ 
     if (!password) {
         return
     }
